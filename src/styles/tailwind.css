@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #0F0F1A; /* rich-dark-foundation */
+    --color-foreground: #FFFFFF; /* white */
+    --color-border: rgba(0, 255, 136, 0.2); /* matrix-green-20 */
+    --color-input: #1E1E3F; /* elevated-surface */
+    --color-ring: #00FF88; /* matrix-green */
+    
+    /* Card Colors */
+    --color-card: #1E1E3F; /* elevated-surface */
+    --color-card-foreground: #FFFFFF; /* white */
+    
+    /* Popover Colors */
+    --color-popover: #1A1A2E; /* deep-space-blue */
+    --color-popover-foreground: #FFFFFF; /* white */
+    
+    /* Muted Colors */
+    --color-muted: #1A1A2E; /* deep-space-blue */
+    --color-muted-foreground: #B0B0C8; /* muted-lavender */
+    
+    /* Primary Colors */
+    --color-primary: #00FF88; /* matrix-green */
+    --color-primary-foreground: #0F0F1A; /* rich-dark-foundation */
+    
+    /* Secondary Colors */
+    --color-secondary: #1A1A2E; /* deep-space-blue */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Destructive Colors */
+    --color-destructive: #FF4757; /* clear-red */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #FFD700; /* signature-gold */
+    --color-accent-foreground: #0F0F1A; /* rich-dark-foundation */
+    
+    /* Success Colors */
+    --color-success: #00FF88; /* matrix-green */
+    --color-success-foreground: #0F0F1A; /* rich-dark-foundation */
+    
+    /* Warning Colors */
+    --color-warning: #FFB347; /* warm-amber */
+    --color-warning-foreground: #0F0F1A; /* rich-dark-foundation */
+    
+    /* Error Colors */
+    --color-error: #FF4757; /* clear-red */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    /* Matrix Theme Specific Colors */
+    --color-surface: #1E1E3F; /* elevated-surface */
+    --color-matrix-glow: rgba(0, 255, 136, 0.1); /* matrix-green-10 */
+    --color-shadow-primary: rgba(0, 255, 136, 0.1); /* matrix-green-10 */
+    --color-shadow-dark: rgba(0, 0, 0, 0.3); /* black-30 */
+    
+    /* Signature Category Colors */
+    --color-category-gold: #FFD700; /* signature-gold */
+    --color-category-red: #FF4757; /* clear-red */
+    --color-category-blue: #4A90E2; /* signature-blue */
+    --color-category-pink: #FF69B4; /* signature-pink */
+    --color-category-green: #00FF88; /* matrix-green */
+    --color-category-silver: #C0C0C0; /* signature-silver */
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Matrix Animation Base */
+  @keyframes matrixWave {
+    0%, 100% { 
+      transform: translate3d(0, 0, 0) scale(1);
+      opacity: 0.1;
+    }
+    50% { 
+      transform: translate3d(10px, -10px, 0) scale(1.05);
+      opacity: 0.2;
+    }
+  }
+  
+  .matrix-bg {
+    animation: matrixWave 3s ease-in-out infinite;
+  }
+  
+  /* Typography Classes */
+  .font-heading {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+::-webkit-scrollbar-thumb  {
+    @apply rounded-full;
+  }
+::-webkit-scrollbar-thumb:hover  {
+    
+  }
+}
+
+@layer components {
+  /* Matrix Glow Effect */
+  .matrix-glow {
+    box-shadow: 
+      0 0 10px var(--color-matrix-glow),
+      0 0 20px var(--color-matrix-glow),
+      0 0 40px var(--color-matrix-glow);
+  }
+  
+  /* Signature Canvas Styles */
+  .signature-canvas {
+    border: 2px solid var(--color-border);
+    border-radius: 16px;
+    background: var(--color-surface);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .signature-canvas:focus-within {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-matrix-glow);
+  }
+  
+  /* Progress Indicator */
+  .progress-step {
+    @apply relative flex items-center justify-center w-8 h-8 rounded-full border-2 transition-all duration-300;
+    border-color: var(--color-border);
+    background: var(--color-background);
+  }
+  
+  .progress-step.active {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-primary-foreground);
+    box-shadow: 0 0 16px var(--color-matrix-glow);
+  }
+  
+  .progress-step.completed {
+    border-color: var(--color-success);
+    background: var(--color-success);
+    color: var(--color-success-foreground);
+  }
+  
+  /* Category Badge */
+  .category-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium transition-all duration-200;
+    border: 1px solid transparent;
+  }
+  
+  .category-badge.gold {
+    background: linear-gradient(135deg, var(--color-category-gold), #FFA500);
+    color: var(--color-background);
+    border-color: var(--color-category-gold);
+  }
+  
+  .category-badge.red {
+    background: linear-gradient(135deg, var(--color-category-red), #DC143C);
+    color: var(--color-foreground);
+    border-color: var(--color-category-red);
+  }
+  
+  .category-badge.blue {
+    background: linear-gradient(135deg, var(--color-category-blue), #1E90FF);
+    color: var(--color-foreground);
+    border-color: var(--color-category-blue);
+  }
+  
+  .category-badge.pink {
+    background: linear-gradient(135deg, var(--color-category-pink), #FF1493);
+    color: var(--color-foreground);
+    border-color: var(--color-category-pink);
+  }
+  
+  .category-badge.green {
+    background: linear-gradient(135deg, var(--color-category-green), #32CD32);
+    color: var(--color-background);
+    border-color: var(--color-category-green);
+  }
+  
+  .category-badge.silver {
+    background: linear-gradient(135deg, var(--color-category-silver), #A9A9A9);
+    color: var(--color-background);
+    border-color: var(--color-category-silver);
+  }
+}
+
+@layer utilities {
+  /* Animation Utilities */
+  .animate-matrix-float {
+    animation: matrixWave 2s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  /* Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    .matrix-bg,
+    .animate-matrix-float,
+    .animate-pulse-glow {
+      animation: none;
+    }
+    
+    * {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+    }
+  }
+  
+  /* Custom Shadows */
+  .shadow-matrix {
+    box-shadow: 
+      0 2px 8px var(--color-shadow-dark),
+      0 0 16px var(--color-shadow-primary);
+  }
+  
+  .shadow-matrix-lg {
+    box-shadow: 
+      0 8px 24px var(--color-shadow-dark),
+      0 0 32px var(--color-shadow-primary);
+  }
+  
+  /* Text Glow */
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+  
+  /* Backdrop Blur */
+  .backdrop-matrix {
+    backdrop-filter: blur(8px) saturate(180%);
+    background: rgba(15, 15, 26, 0.8);
+  }
+}
