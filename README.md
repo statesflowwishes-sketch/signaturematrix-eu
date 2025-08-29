@@ -1,9 +1,8 @@
 # �🇺 SignatureMatrix - EU-konforme Digitale Signatur-Plattform
-![1000001696](https://github.com/user-attachments/assets/ee5bac9e-be9b-457c-92fb-417954324e5c)
 
 <div align="center">
 
-![SignatureMatrix Logo](https://via.placeholder.com/400x120/0052cc/ffffff?text=🇪🇺%20SignatureMatrix%20-%20Digital%20Signature%20Platform)
+![SignatureMatrix Logo](🇪🇺![1000001696](https://github.com/user-attachments/assets/ee5bac9e-be9b-457c-92fb-417954324e5c)
 
 ## 🏆 OFFIZIELLE EU-ZERTIFIZIERUNGEN
 
