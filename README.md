@@ -1,4 +1,5 @@
 # �🇺 SignatureMatrix - EU-konforme Digitale Signatur-Plattform
+![1000001696](https://github.com/user-attachments/assets/ee5bac9e-be9b-457c-92fb-417954324e5c)
 
 <div align="center">
 
@@ -42,7 +43,8 @@
 
 </div>
 
----
+---![1000000072](https://github.com/user-attachments/assets/a8674f16-16c6-40d4-99e5-59ba3d50b71a)
+
 
 ## 📋 Inhaltsverzeichnis
 
@@ -69,7 +71,8 @@ Bereitstellung einer **sicheren, ethischen und rechtskonformen** Lösung für di
 ### 🔍 Vision  
 Die führende Plattform für **vertrauensvolle digitale Interaktionen** zu werden, die **Menschenrechte**, **Datenschutz** und **europäische Werte** in den Mittelpunkt stellt.
 
----
+---![1000000073](https://github.com/user-attachments/assets/6ad5f94e-45f6-414f-ac5d-725f9f7a0a50)
+
 
 ## 🏛️ Compliance & Zertifikate
 
@@ -87,7 +90,8 @@ Die führende Plattform für **vertrauensvolle digitale Interaktionen** zu werde
 
 </div>
 
-### 📋 Rechtliche Grundlagen
+### 📋 Rechtliche Grundlagen![1000000248](https://github.com/user-attachments/assets/02e49b48-7252-4442-b8cb-357d36952ec9)
+
 
 ```mermaid
 graph TD
@@ -108,7 +112,8 @@ graph TD
     D --> M[🌍 Universelle Grundrechte]
 ```
 
----
+---![1000001116](https://github.com/user-attachments/assets/f17e793d-a000-40d4-b7ca-92625a5992c6)
+
 
 ## 🚀 Features
 
@@ -157,7 +162,8 @@ graph TD
 </tr>
 </table>
 
-### 🎨 Benutzerinterface Features
+### 🎨 Benutzerinterface Features![1000000166](https://github.com/user-attachments/assets/f834e418-91d6-4b76-874c-055a428b5732)
+
 
 ```typescript
 // Interaktive UI-Komponenten
@@ -177,7 +183,8 @@ const UIFeatures = {
 }
 ```
 
----
+---![1000000176](https://github.com/user-attachments/assets/ec041fd4-6631-4d86-a391-33922c709836)
+
 
 ## 📊 Systemarchitektur
 
@@ -246,7 +253,8 @@ signaturematrix/
 └── 📋 package.json            # Dependencies
 ```
 
----
+---![1000000180](https://github.com/user-attachments/assets/9abc75e6-3535-48d6-a477-6deacb1f5f94)
+
 
 ## 🔐 Sicherheit
 
@@ -393,7 +401,8 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
----
+---![1000000173](https://github.com/user-attachments/assets/ccfa4941-df6d-47c9-91ef-40a5091e23d1)
+
 
 ## 📈 Analytics Dashboard
 
@@ -582,8 +591,9 @@ Vollständige Dokumentation: [docs.signaturematrix.eu](https://docs.signaturemat
 
 </div>
 
-- Built with [Rocket.new](https://rocket.new)
+- Built with [Rocket.]
 - Powered by React and Vite
 - Styled with Tailwind CSS
 
-Built with ❤️ on Rocket.new
+Built with ❤️ VS-Code.
+![1000000071](https://github.com/user-attachments/assets/f98896b7-ca37-4994-9eb0-8e9d4c358709)
