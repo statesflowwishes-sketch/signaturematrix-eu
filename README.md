@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![SignatureMatrix Logo](🇪🇺![1000001696](https://github.com/user-attachments/assets/ee5bac9e-be9b-457c-92fb-417954324e5c)
+!SignatureMatrix Logo🇪🇺![1000001696](https://github.com/user-attachments/assets/ee5bac9e-be9b-457c-92fb-417954324e5c)
 
 ## 🏆 OFFIZIELLE EU-ZERTIFIZIERUNGEN
 
